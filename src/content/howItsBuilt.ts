@@ -12,7 +12,7 @@ export const BUILT_BY = {
     "I'm Ahmed Malik, a computer science graduate from UET Lahore. FlowPlan is the first project in my portfolio, and I took it from the first user story to the release notes: I wrote the product requirements, built the scheduler and the interface, tested it and shipped it.",
     "The question I wanted answered fast is the one a flat to-do list cannot: if this task slips, does my deadline move?",
   ],
-  github: { label: "More of my work on GitHub", href: "https://github.com/ahmed-malikk" },
+  github: { label: "More of my work on GitHub", href: "https://github.com/iahmedmalik" },
 };
 
 export const STORY = {
@@ -68,9 +68,9 @@ export const LINKS = {
   heading: "Links",
   items: [
     { label: "Live app", note: "flow-plan-five.vercel.app", href: "https://flow-plan-five.vercel.app" },
-    { label: "Source code", note: "GitHub", href: "https://github.com/ahmed-malikk/FlowPlan" },
-    { label: "Product requirements", note: "PRD", href: "https://github.com/ahmed-malikk/FlowPlan/blob/main/docs/PRD.md" },
-    { label: "Test report", note: "Results and defects", href: "https://github.com/ahmed-malikk/FlowPlan/blob/main/docs/test-report.md" },
+    { label: "Source code", note: "GitHub", href: "https://github.com/iahmedmalik/FlowPlan" },
+    { label: "Product requirements", note: "PRD", href: "https://github.com/iahmedmalik/FlowPlan/blob/main/docs/PRD.md" },
+    { label: "Test report", note: "Results and defects", href: "https://github.com/iahmedmalik/FlowPlan/blob/main/docs/test-report.md" },
   ],
 };
 

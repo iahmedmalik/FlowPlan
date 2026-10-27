@@ -2,9 +2,9 @@
 
 > Small teams miss deadlines because their tools list tasks but can't show which ones control the deadline. FlowPlan finds the critical path and shows how far every other task can slip.
 
-[![Tests](https://github.com/ahmed-malikk/FlowPlan/actions/workflows/test.yml/badge.svg)](https://github.com/ahmed-malikk/FlowPlan/actions/workflows/test.yml)
+[![Tests](https://github.com/iahmedmalik/FlowPlan/actions/workflows/test.yml/badge.svg)](https://github.com/iahmedmalik/FlowPlan/actions/workflows/test.yml)
 
-**Live:** [flow-plan-five.vercel.app](https://flow-plan-five.vercel.app/) · **PRD:** [docs/PRD.md](docs/PRD.md) · **Tests:** [plan](docs/test-plan.md) · [report](docs/test-report.md) · **Lessons:** [lessons learned](docs/lessons-learned.md) · **Board:** [issues](https://github.com/ahmed-malikk/FlowPlan/issues?q=is%3Aissue)
+**Live:** [flow-plan-five.vercel.app](https://flow-plan-five.vercel.app/) · **PRD:** [docs/PRD.md](docs/PRD.md) · **Tests:** [plan](docs/test-plan.md) · [report](docs/test-report.md) · **Lessons:** [lessons learned](docs/lessons-learned.md) · **Board:** [issues](https://github.com/iahmedmalik/FlowPlan/issues?q=is%3Aissue)
 
 ![FlowPlan showing the example project: the task list beside the flow diagram, the critical path in amber](docs/screenshot.png)
 
@@ -12,7 +12,7 @@
 
 ## Why I built it
 
-Trello lists, WhatsApp threads and spreadsheets can't answer the question that matters most to a deadline: *if this task is late, does the delivery date move?* Tools that can, like MS Project, are heavy and paid for a 3–10 person team. FlowPlan is the first project of my 3-week, 10-project portfolio, and its first real user is me: I used it to plan that portfolio sprint ([#10](https://github.com/ahmed-malikk/FlowPlan/issues/10)).
+Trello lists, WhatsApp threads and spreadsheets can't answer the question that matters most to a deadline: *if this task is late, does the delivery date move?* Tools that can, like MS Project, are heavy and paid for a 3–10 person team. FlowPlan is the first project of my 3-week, 10-project portfolio, and its first real user is me: I used it to plan that portfolio sprint ([#10](https://github.com/iahmedmalik/FlowPlan/issues/10)).
 
 ## Features
 
@@ -134,8 +134,8 @@ Testing can't start until Backend (day 9) and Frontend (day 8) are both done, so
 
 - **Correctness:** the scheduler matches hand calculations for the worked example (every ES/EF/LS/LF/slack value), three further projects and nine edge cases. In all, **132 unit tests** pass, covering the scheduler, plan helpers, the diagram's layout and geometry, and the contrast of every colour pair.
 - **System tests:** 35 user journeys in desktop Edge, desktop Chrome and a 375 px phone view: **99 passed, 6 skipped by design, 0 failed** on the local production build (2026-10-15); the v2.0 run also passed on the live Vercel site. The 6 skipped cases only apply to one kind of device: the phone-only swipe test is skipped on desktop, and the hover and zoom tests are skipped in the phone view.
-- **Bugs found and fixed:** testing found 2 phone-only layout defects in version 1 ([#11](https://github.com/ahmed-malikk/FlowPlan/issues/11), [#13](https://github.com/ahmed-malikk/FlowPlan/issues/13)) and, in the redesign, a plan with no tasks hiding its empty state on a phone ([#40](https://github.com/ahmed-malikk/FlowPlan/issues/40)); all are fixed and covered by tests.
-- **Real use, user #1 is me:** I planned my own 3-week, 11-item portfolio sprint in FlowPlan ([#10](https://github.com/ahmed-malikk/FlowPlan/issues/10)). It finished **Mon 26 Oct 2026, day 21**, exactly matching my hand calculation, with **all 11 items critical**. Planned with dependencies alone, the same work takes **12 days**. The 9-day gap is caused by one person doing everything, not by dependencies. So any slip moves my deadline, my single buffer day matters, and per-person overload warnings are the most useful next feature.
+- **Bugs found and fixed:** testing found 2 phone-only layout defects in version 1 ([#11](https://github.com/iahmedmalik/FlowPlan/issues/11), [#13](https://github.com/iahmedmalik/FlowPlan/issues/13)) and, in the redesign, a plan with no tasks hiding its empty state on a phone ([#40](https://github.com/iahmedmalik/FlowPlan/issues/40)); all are fixed and covered by tests.
+- **Real use, user #1 is me:** I planned my own 3-week, 11-item portfolio sprint in FlowPlan ([#10](https://github.com/iahmedmalik/FlowPlan/issues/10)). It finished **Mon 26 Oct 2026, day 21**, exactly matching my hand calculation, with **all 11 items critical**. Planned with dependencies alone, the same work takes **12 days**. The 9-day gap is caused by one person doing everything, not by dependencies. So any slip moves my deadline, my single buffer day matters, and per-person overload warnings are the most useful next feature.
 - **Still to measure:** usability with 3 first-time users (target: a 6-task plan in under 5 minutes). Results will be added here when they're real.
 
 ## What I'd do next

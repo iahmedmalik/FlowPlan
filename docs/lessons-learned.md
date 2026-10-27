@@ -31,7 +31,7 @@ What building, testing and shipping FlowPlan taught me, and what I'm changing fo
 
 ## 3. Testing: what actually happened
 
-- **Unit tests proved the maths, but both real bugs only appeared on phones** ([#11](https://github.com/ahmed-malikk/FlowPlan/issues/11), [#13](https://github.com/ahmed-malikk/FlowPlan/issues/13)). Testing at 375 px found them.
+- **Unit tests proved the maths, but both real bugs only appeared on phones** ([#11](https://github.com/iahmedmalik/FlowPlan/issues/11), [#13](https://github.com/iahmedmalik/FlowPlan/issues/13)). Testing at 375 px found them.
 - **The first fix isn't always the fix.** The dropdown bug needed a second change; re-running the test is what showed it.
 - **A failing test can be the test's fault.** Three early failures were mistakes in my test scripts, not the app. Read the error before changing code.
 - **Test the live site too.** The same 51 system tests passed against the deployed site, so what users get is what I tested.
@@ -50,7 +50,7 @@ What building, testing and shipping FlowPlan taught me, and what I'm changing fo
 | README and About box | The repo's shop window: live link, screenshots, design decisions, real results |
 | History | Rewriting published commits changes every commit ID and needs a careful force-push: possible, but best avoided by getting commits right the first time |
 | Identity | Check that every repo commits under my own name before the first commit |
-| Two repos | One for the product (FlowPlan), one for the programme ([portfolio-progress](https://github.com/ahmed-malikk/portfolio-progress)) |
+| Two repos | One for the product (FlowPlan), one for the programme ([portfolio-progress](https://github.com/iahmedmalik/portfolio-progress)) |
 
 ## 5. Running and deploying
 
