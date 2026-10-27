@@ -305,4 +305,15 @@
   .fp-edge-in {
     stroke-dashoffset: 0;
   }
+  /* Things that arrive still fade in, without travelling, so a new page, node or message is noticed. */
+  .fp-enter,
+  .fp-node-in,
+  .fp-pop,
+  .fp-dot-pop,
+  [role="alert"] {
+    animation: fp-fade 0.2s linear both !important;
+  }
+}
+@keyframes fp-fade {
+  from { opacity: 0; }
 }

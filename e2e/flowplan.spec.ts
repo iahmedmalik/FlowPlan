@@ -657,3 +657,13 @@ test.describe("first visit", () => {
     await expect(html).not.toHaveCSS("overflow", "hidden");
   });
 });
+
+test.describe("with reduced motion", () => {
+  test.use({ reducedMotion: "reduce" });
+  test("ST-36 things that arrive fade in instead of rising (#47)", async ({ page }) => {
+    await page.goto("/how-its-built");
+    const heading = page.locator("h1.fp-enter");
+    await expect(heading).toHaveCSS("animation-name", "fp-fade");
+    await expect.poll(() => heading.evaluate((el) => getComputedStyle(el).opacity)).toBe("1");
+  });
+});
